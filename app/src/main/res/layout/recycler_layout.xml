@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/customer_border_list_item"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtId"
+        tools:text="ID"
+        android:layout_alignParentEnd="true"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/txtId"
+        android:id="@+id/linearTitle"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttitle"
+            tools:text="Title"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtsubtitle"
+            android:ellipsize="end"
+            tools:text="Subtitle"
+            android:textSize="12sp"
+            android:textColor="@color/grey"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCompany"
+        android:orientation="vertical"
+        android:layout_below="@id/linearTitle"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCompany"
+            android:text="Company"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCompanyName"
+            tools:text="Name"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCompanyPhrase"
+            tools:text="Phrase"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCompanyBs"
+            android:ellipsize="end"
+            tools:text="Bs"
+            android:textSize="12sp"
+            android:textColor="@color/grey"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/linearCompany"
+        android:id="@+id/linearGeo"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtlat"
+            tools:text="lat"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtlong"
+            android:ellipsize="end"
+            tools:text="long"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
